@@ -5,16 +5,16 @@ import java.util.Iterator;
 
 import javax.swing.JPanel;
 
-public class DrawingView extends JPanel{
+public class DrawingView extends JPanel {
 	DrawingModel model = new DrawingModel();
 
 	public void setModel(DrawingModel model) {
 		this.model = model;
 	}
-	
+
 	public void paint(Graphics g) {
-		Iterator<Point> it = model.getPoints().iterator();
-		while(it.hasNext()) {
+		Iterator<Shape> it = model.getPoints().iterator();
+		while (it.hasNext()) {
 			it.next().draw(g);
 		}
 	}
