@@ -27,7 +27,7 @@ public class DrawingController {
 		sremBanatbacka.add(srem);
 		sremBanatbacka.add(banat);
 		sremBanatbacka.add(backa);
-
+		
 		model.add(sremBanatbacka);
 
 		frame.repaint();
